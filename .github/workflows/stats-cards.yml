@@ -1,6 +1,10 @@
 name: Update README cards
 
 on:
+  push: # 推送时立即触发
+    branches:
+      - main
+      - master
   schedule:
     - cron: "0 0 * * *" # Runs once daily at midnight
   workflow_dispatch:
